@@ -1,43 +1,92 @@
-### 懒盘搜索
+# 网盘搜索导航
 
-Demo: [http://lzpan.com](http://lzpan.com)
 
-### 使用
+## 📋 项目简介
 
-0-1、首先你需要在本地安装 node 环境，node 下载： [https://nodejs.org/en/](https://nodejs.org/en/)
+这是网盘搜索导航的源码.  
+**Demo**: [https://so.lzpanx.com](https://so.lzpanx.com)
 
-测试下载安装是否准确：打开 cmd(terminal)，输入`node -v` 以及`npm -v`（分开两次输入）
+## 🚀 网盘搜索网站搭建指南
 
-如果均显示了对应的版本信息，那么就安装准确！
+### 免费程序：使用 PanSearch
 
-0-2、还需要安装 git 软件，因为下一步需要克隆项目到本地
+- **下载地址**: [https://github.com/Xwudao/go-pansearch-release](https://github.com/Xwudao/go-pansearch-release)
+- **文档**: [https://docs.hunhepan.com/pansearch/](https://docs.hunhepan.com/pansearch/)
+- **说明**: PanSearch 是 ReMan 的免费版本，SEO 友好，功能简单。
 
-1、克隆项目到本地：
+### 收费程序：使用 ReMan
 
-`git clone https://github.com/Xwudao/lzpan_search.git`
+支持导入夸克、百度、迅雷网盘资源的搜索引擎源码.
 
-2、安装依赖：
+#### 简介
 
-`yarn` or `npm i`
+ReMan 是一款拥有后台的个人网盘资源管理程序，帮助管理、搜索网盘资源.
 
-3、修改一些你想修改到东西，然后进行第 4 步构建
+#### 特点
 
-4、构建
+- ✅ 完善的后台管理（资源、分类、用户、卡密等）
+- ✅ 支持手机端和电脑端
+- ✅ 程序文件：`config.yml` 和 `reman`（二进制文件，无源码）
 
-`yarn build` or `npm run build`
+#### 特色功能
 
-5、构建后会生成一个 dist 目录，然后复制这个目录里面到文件到你的网站根目录即可！
+- 📂 支持分类展示资源列表
+- 🔝 设置资源为“自己的”以优先排序（有助于网盘拉新）
+- 🆕 **2024/05/12 更新**: 添加用户系统 + 卡密系统
+- 🔥 提供热词、热门资源记录，可在后台查看搜索热词
+- 更多功能请体验演示：[https://docs.hunhepan.com/reman/](https://docs.hunhepan.com/reman/)
 
-### 你可能想更改的东西
+## 🔍 懒盘搜索
 
-1、src/data/data.json
+**Demo**: [http://so.lzpanx.com](http://so.lzpanx.com)
 
-此文件是所有网站的数据，按照相应格式更改即可
+## 🛠️ 本地使用指南
 
-2、public/index.html\mobile.html
+### 环境准备
 
-修改里面到标题等信息
+1. 安装 Node.js: [https://nodejs.org/en/](https://nodejs.org/en/)
+2. 验证安装: 在终端运行 `node -v` 和 `npm -v`
+3. 安装 Git: 用于克隆项目
 
-### 协议
+### 步骤
+
+1. **克隆项目**:
+
+   ```bash
+   git clone https://github.com/Xwudao/lzpan_search.git
+   ```
+
+2. **安装依赖**:
+
+   ```bash
+   npx pnpm i
+   # 或
+   npm i
+   ```
+
+3. **修改内容** (可选):
+   - 编辑 `src/data/data.json` 以更新网站数据
+   - 修改 `public/index.html` 或 `mobile.html` 中的标题等信息
+
+4. **构建项目**:
+
+   ```bash
+   npm run build
+   ```
+
+5. **部署**:
+   - 构建后生成 `dist` 目录
+   - 将 `dist` 中的文件复制到网站根目录
+
+## 🙏 感谢
+
+本项目 CDN 加速及安全防护由 [Tencent EdgeOne](https://edgeone.ai/zh?from=github) 赞助
+
+![Tencent EdgeOne](/images/tc.png)
+
+## 📄 协议
 
 MIT
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Xwudao/lzpan_search&type=Date)](https://star-history.com/#Xwudao/lzpan_search&Date)
